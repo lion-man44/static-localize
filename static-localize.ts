@@ -5,7 +5,7 @@ const path = require('path');
 const HTMLParser = require('node-html-parser');
 const commandLineArgs = require('command-line-args');
 const commandLineUsage = require('command-line-usage');
-const packageJson = require('./package.json');
+const packageJson = require(path.join(path.resolve(__dirname, '..'), 'package.json'));
 const optionDefinition = [
   { name: 'sourceFile', alias: 's', type: String },
   { name: 'dry-run', type: Boolean },
