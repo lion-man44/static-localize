@@ -1,0 +1,13 @@
+use_language:
+  - ja
+  - en
+title:
+  en: Static Localize
+  ja: Static Localize
+h1:
+  en: About Static Localize
+  ja: Static Localizeについて
+site:
+  description:
+    en: localization on local
+    ja: ローカル上で翻訳を行います

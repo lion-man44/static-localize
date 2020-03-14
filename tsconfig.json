@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "esnext",
+    "sourceMap": false,
+    "outFile": "./bin/static-localize"
+  },
+  "include": [
+    "./static-localize.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
