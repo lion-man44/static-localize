@@ -1,10 +1,10 @@
 {
   "name": "static-localize",
   "description": "This package generates static files for each locale",
-  "main": "./bin/static-localize.js",
+  "bin": "./bin/static-localize",
   "author": "lion-man44 <lion44man@gmail.com>",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scripts": {
     "test": "",
     "build": "tsc"
