@@ -55,10 +55,11 @@ try {
       const r = deepFind(doc, `${key}.${lang}`);
       return r;
     });
-    if (options['dry-run']) console.log(result);
+    const doctype = '<!DOCTYPE html>\n'
+    if (options['dry-run']) console.log(doctype + result);
     else {
       const ext = path.extname(sourceFile);
-      fs.writeFileSync(`docs/${path.basename(sourceFile, ext)}.${lang}${ext}`, result);
+      fs.writeFileSync(`docs/${path.basename(sourceFile, ext)}.${lang}${ext}`, doctype + result);
     }
   });
 } catch(e) {
