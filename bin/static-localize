@@ -45,7 +45,9 @@ const deepFind = (obj, path) => {
 };
 try {
     const doc = yaml.safeLoad(fs.readFileSync(inputFile, 'utf8'));
-    const source = HTMLParser.parse(fs.readFileSync(sourceFile, 'utf8'));
+    const textFile = fs.readFileSync(sourceFile, 'utf8')
+    const source = HTMLParser.parse(textFile, { script: true, style: true });
+
     doc.use_language.forEach((lang) => {
         const result = source.toString().replace(regDelimitter, (v, _idx, _input) => {
             const key = v.replace(/{{/, '').replace(/}}/, '').trim();
