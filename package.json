@@ -4,7 +4,7 @@
   "bin": "./bin/static-localize",
   "author": "lion-man44 <lion44man@gmail.com>",
   "license": "MIT",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "scripts": {
     "dry-test": "./bin/static-localize --sourceFile ./example/src/index.html --inputYaml ./example/src/locale/index.yml --dry-run",
     "test": "./bin/static-localize --sourceFile ./example/src/index.html --inputYaml ./example/src/locale/index.yml",
